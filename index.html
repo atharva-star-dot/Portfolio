@@ -5,238 +5,238 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Atharva Vadane — Portfolio</title>
 
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --bg:#0f1724;        /* deep navy */
-      --card:#0b1220;      /* slightly lighter */
-      --accent:#FF6B6B;    /* coral */
-      --teal:#17BEBB;      /* teal accent */
-      --muted:#98A0B3;     /* muted text */
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#FF6B6B;
+      --teal:#17BEBB;
+      --muted:#98A0B3;
       --glass: rgba(255,255,255,0.03);
       --radius:14px;
       --maxwidth:1100px;
     }
 
-    /* Global reset */
     *{box-sizing:border-box;margin:0;padding:0}
     html,body{height:100%}
     body{
       font-family:Inter, system-ui, Arial, sans-serif;
-      background:
-        linear-gradient(180deg, rgba(10,14,22,1) 0%, rgba(6,10,16,1) 100%);
+      background: linear-gradient(180deg, rgba(10,14,22,1) 0%, rgba(6,10,16,1) 100%);
       color:#E6EEF3;
       -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
       line-height:1.45;
       padding:32px 20px;
       display:flex;
       justify-content:center;
     }
 
-    .wrap{
-      width:100%;
-      max-width:var(--maxwidth);
-    }
+    .wrap{ width:100%; max-width:var(--maxwidth); }
 
-    /* Top header / nav */
     header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      margin-bottom:28px;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; margin-bottom:28px;
     }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      text-decoration:none;
-      color:inherit;
-    }
-
-    .logo {
-      width:56px;height:56px;
-      border-radius:12px;
+    .brand{ display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit; }
+    .logo{
+      width:56px; height:56px; border-radius:12px;
       background: linear-gradient(135deg,var(--teal), #0BB3A8 40%, #2EC4B6 100%);
-      display:flex;align-items:center;justify-content:center;
+      display:flex; align-items:center; justify-content:center;
       box-shadow: 0 6px 18px rgba(23,190,187,0.12), inset 0 -6px 18px rgba(255,255,255,0.02);
-      font-weight:800;
-      font-family:Manrope,Inter,sans-serif;
-      color:#032A2A;
-      font-size:20px;
+      font-weight:800; font-family:Manrope,Inter,sans-serif; color:#032A2A; font-size:20px;
     }
-
     .brand h1{font-size:18px;letter-spacing:0.2px}
     .brand p{font-size:12px;color:var(--muted);margin-top:4px}
 
-    nav{
-      display:flex;
-      align-items:center;
-      gap:14px;
-    }
-
+    nav{ display:flex; align-items:center; gap:14px; }
     .links a{
-      color:var(--muted);
-      text-decoration:none;
-      font-weight:600;
-      padding:8px 12px;
-      border-radius:10px;
-      transition:all .18s ease;
-      font-size:14px;
+      color:var(--muted); text-decoration:none; font-weight:600;
+      padding:8px 12px; border-radius:10px; transition:all .18s ease; font-size:14px;
     }
     .links a:hover{background:var(--glass); color:var(--teal)}
 
-    /* Card layout */
-    .main{
-      display:grid;
-      grid-template-columns: 320px 1fr;
-      gap:24px;
-    }
+    .main{ display:grid; grid-template-columns: 320px 1fr; gap:24px; }
 
-    /* Left column (profile card) */
+    /* Left profile card */
     .profile{
       background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:var(--radius);
-      padding:20px;
-      box-shadow: 0 8px 30px rgba(2,6,12,0.6);
-      position:relative;
+      border-radius:var(--radius); padding:20px;
+      box-shadow: 0 8px 30px rgba(2,6,12,0.6); position:sticky; top:20px;
+      align-self:start;
     }
-
-    .avatar{
-      width:100%;
-      display:flex;
-      align-items:center;
-      gap:12px;
-      margin-bottom:14px;
-    }
-
+    .avatar{ width:100%; display:flex; align-items:center; gap:12px; margin-bottom:14px; }
     .avatar .photo{
-      width:84px;height:84px;border-radius:14px;
+      width:84px; height:84px; border-radius:14px;
       background: linear-gradient(180deg,#0B1222 0%, #06111A 100%);
-      display:flex;align-items:center;justify-content:center;
-      color:var(--teal); font-weight:700;
-      font-family:Manrope,Inter;
-      font-size:22px;
-      box-shadow: 0 8px 20px rgba(2,6,12,0.6), inset 0 -6px 10px rgba(255,255,255,0.02);
+      display:flex; align-items:center; justify-content:center;
+      color:var(--teal); font-weight:700; font-family:Manrope,Inter;
+      font-size:22px; box-shadow: 0 8px 20px rgba(2,6,12,0.6);
     }
-
     .avatar .meta h2{font-size:18px}
     .avatar .meta p{color:var(--muted);font-size:13px;margin-top:6px}
 
     .badges{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
     .badge{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:10px;font-size:13px;color:var(--muted);}
 
-    .section{
-      margin-top:12px;
-      padding-top:12px;
-      border-top:1px solid rgba(255,255,255,0.02);
-    }
-    .section h3{font-size:13px;color:var(--teal);margin-bottom:10px;font-weight:700;letter-spacing:.6px}
+    .section{ margin-top:12px; padding-top:12px; border-top:1px solid rgba(255,255,255,0.04); }
+    .section h3{font-size:12px;color:var(--teal);margin-bottom:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;}
 
     .contact-list{display:flex;flex-direction:column;gap:8px;font-size:14px;color:var(--muted)}
     .contact-list a{color:inherit;text-decoration:none}
     .contact-list span{display:block;color:#cfeff0}
 
-    .skill-pill{display:inline-block;padding:8px 10px;border-radius:999px;background:rgba(255,255,255,0.01);margin:6px 6px 0 0;font-size:13px;color:var(--muted)}
-
-    /* Right column (content) */
-    .content{
-      display:flex;
-      flex-direction:column;
-      gap:18px;
-    }
+    /* Right content */
+    .content{ display:flex; flex-direction:column; gap:18px; }
 
     .card{
       background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:var(--radius);
-      padding:20px;
+      border-radius:var(--radius); padding:22px;
       box-shadow: 0 8px 30px rgba(2,6,12,0.5);
     }
 
-    .hero{
-      display:flex;
-      gap:18px;
-      align-items:center;
-    }
+    .card h3{font-size:16px;font-weight:700;margin-bottom:14px;color:#E6EEF3}
 
-    .hero .intro{
-      flex:1;
-    }
+    /* Hero */
+    .hero{ display:flex; gap:18px; align-items:flex-start; }
+    .hero .intro{ flex:1; }
+    .hero h2{font-size:22px;margin-bottom:8px;line-height:1.3}
+    .hero p.lead{color:var(--muted);margin-bottom:14px;max-width:60ch;font-size:14px;line-height:1.6}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;}
 
-    .hero h2{font-size:22px;margin-bottom:8px}
-    .hero p.lead{color:var(--muted);margin-bottom:14px;max-width:60ch}
-
-    .cta {
-      display:flex;gap:12px;flex-wrap:wrap;
-    }
     .btn{
-      display:inline-block;padding:10px 16px;border-radius:12px;text-decoration:none;font-weight:700;font-size:14px;
+      display:inline-flex; align-items:center; gap:6px;
+      padding:10px 18px; border-radius:12px; text-decoration:none; font-weight:700; font-size:14px;
       background:linear-gradient(90deg,var(--teal), #10B6B0);
-      color:#012426;
+      color:#012426; transition: opacity .18s;
     }
+    .btn:hover{opacity:.88}
     .btn.secondary{
-      background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);
+      background:transparent; border:1px solid rgba(255,255,255,0.07);
+      color:var(--muted);
+    }
+    .btn.accent{
+      background:linear-gradient(90deg,var(--accent), #e05555);
+      color:#fff;
     }
 
-    /* Project list */
-    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    /* stat boxes in hero */
+    .stat-box{
+      background:rgba(255,255,255,0.01);padding:12px 14px;
+      border-radius:12px;text-align:center;border:1px solid rgba(255,255,255,0.03);
+    }
+    .stat-box .val{font-size:15px;font-weight:800;color:var(--teal)}
+    .stat-box .lbl{color:var(--muted);font-size:12px;margin-top:4px}
+
+    /* Projects */
+    .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
     .project{
-      padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
+      padding:14px;border-radius:12px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.005));
+      border:1px solid rgba(255,255,255,0.03);
+      display:flex;flex-direction:column;gap:8px;
+    }
+    .project-header{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+    .project h4{font-size:15px;font-weight:700;line-height:1.3}
+    .project p{color:var(--muted);font-size:13px;line-height:1.55;flex:1}
+    .project-tech{font-size:12px;color:var(--teal);font-weight:600}
+    .project-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+    .proj-link{
+      font-size:12px;font-weight:600;padding:5px 10px;border-radius:8px;
+      text-decoration:none;color:var(--teal);
+      border:1px solid rgba(23,190,187,0.18);
+      background:rgba(23,190,187,0.04);
+      transition: background .15s;
+    }
+    .proj-link:hover{background:rgba(23,190,187,0.1)}
+    .proj-link.hf{color:#f5a623;border-color:rgba(245,166,35,0.25);background:rgba(245,166,35,0.05)}
+    .proj-link.hf:hover{background:rgba(245,166,35,0.12)}
+
+    /* Tag badge for "Live" */
+    .live-badge{
+      font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;
+      background:rgba(23,190,187,0.12);color:var(--teal);white-space:nowrap;
+    }
+    .live-badge.hf-badge{background:rgba(245,166,35,0.12);color:#f5a623}
+
+    /* Timeline */
+    .timeline{display:flex;flex-direction:column;gap:14px}
+    .item{
+      padding:14px;border-radius:12px;
+      background:rgba(255,255,255,0.01);
+      border-left:3px solid var(--teal);
+    }
+    .item.alt{border-left-color:var(--accent)}
+    .item h4{font-size:15px;font-weight:700}
+    .item .date{color:var(--muted);font-size:13px;margin-top:4px}
+    .item p{color:var(--muted);font-size:13px;margin-top:8px;line-height:1.55}
+    .item ul{color:var(--muted);font-size:13px;margin-top:8px;padding-left:18px;line-height:1.7}
+
+    /* Skills */
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .skill-card{
+      padding:10px 12px;border-radius:10px;
+      background:rgba(255,255,255,0.015);
+      font-size:13px;color:var(--muted);
       border:1px solid rgba(255,255,255,0.02);
     }
-    .project h4{font-size:15px;margin-bottom:6px}
-    .project p{color:var(--muted);font-size:13px}
 
-    /* Experience / education lists */
-    .timeline{display:flex;flex-direction:column;gap:12px}
-    .item{padding:10px;border-radius:10px;background:rgba(255,255,255,0.01);border-left:4px solid rgba(255,255,255,0.02)}
-    .item h4{font-size:15px}
-    .item p{color:var(--muted);font-size:13px;margin-top:6px}
+    /* Achievements */
+    .achievement-list{display:flex;flex-direction:column;gap:10px;margin-top:4px}
+    .achievement{
+      display:flex;gap:12px;align-items:flex-start;
+      padding:10px 12px;border-radius:10px;background:rgba(255,107,107,0.04);
+      border:1px solid rgba(255,107,107,0.08);
+    }
+    .achievement-icon{font-size:18px;line-height:1}
+    .achievement p{font-size:14px;color:#E6EEF3}
+    .achievement span{font-size:12px;color:var(--muted)}
 
-    /* Skills grid */
-    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-    .skill-card{padding:10px;border-radius:10px;background:rgba(255,255,255,0.01);font-size:13px;color:var(--muted)}
+    /* Certs */
+    .cert-list{display:flex;flex-direction:column;gap:6px;margin-top:4px}
+    .cert{
+      font-size:13px;color:var(--muted);
+      padding:7px 10px;border-radius:8px;
+      background:rgba(255,255,255,0.01);
+      border:1px solid rgba(255,255,255,0.02);
+    }
 
-    /* Footer */
+    /* Profile links */
+    .link-list{display:flex;flex-direction:column;gap:6px;margin-top:4px}
+    .link-list a{
+      display:flex;align-items:center;gap:8px;
+      font-size:13px;color:var(--muted);text-decoration:none;
+      padding:6px 8px;border-radius:8px;
+      transition:all .15s;
+    }
+    .link-list a:hover{background:rgba(255,255,255,0.03);color:var(--teal)}
+
     footer{margin-top:10px;text-align:center;color:var(--muted);font-size:13px;padding:18px 8px}
 
-    /* Tiny realistic heart — placed at top-right of profile 
-    .heart-wrap{
-      position:absolute;
-      right:16px;
-      top:16px;
-      width:68px;height:68px;
-      display:flex;align-items:center;justify-content:center;
-      filter:drop-shadow(0 8px 18px rgba(0,0,0,0.6));
-    }
-    .heart-wrap svg{width:64px;height:64px}*/
+    /* Scroll animation */
+    .fade-in{opacity:0;transform:translateY(16px);transition:opacity .5s ease, transform .5s ease}
+    .fade-in.visible{opacity:1;transform:none}
 
     /* Responsive */
     @media (max-width:1000px){
       .hero p.lead{max-width:100%}
-      .projects{grid-template-columns:1fr}
+      .projects-grid{grid-template-columns:1fr}
       .skills-grid{grid-template-columns:repeat(2,1fr)}
-      .main{grid-template-columns: 300px 1fr}
+      .main{grid-template-columns: 290px 1fr}
+      .profile{position:static}
     }
     @media (max-width:800px){
       header{flex-direction:column;align-items:flex-start;gap:12px}
       .main{grid-template-columns:1fr;gap:18px}
       .profile{order:2}
       .content{order:1}
-      .avatar .photo{width:74px;height:74px}
-      .logo{width:48px;height:48px;font-size:18px}
-      .brand h1{font-size:16px}
+      .hero{flex-direction:column}
     }
     @media (max-width:480px){
       body{padding:18px 12px}
       .skills-grid{grid-template-columns:1fr}
     }
 
-    /* small interactive touches */
     a:focus, button:focus{outline:3px solid rgba(23,190,187,0.12);outline-offset:3px}
   </style>
 </head>
@@ -248,10 +248,9 @@
         <div class="logo">AV</div>
         <div>
           <h1>Atharva Vadane</h1>
-          <p>Data Engineer • Web Developer</p>
+          <p>Data Engineer • Full-Stack Developer</p>
         </div>
       </a>
-
       <nav>
         <div class="links" aria-label="Primary">
           <a href="#about">About</a>
@@ -267,34 +266,6 @@
 
       <!-- LEFT: profile card -->
       <aside class="profile" aria-label="Profile card">
-     <!--   <div class="heart-wrap" title="Anatomical heart">
-          <!-- Inline SVG: small realistic-style heart (vector, stylized realistic) 
-          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Realistic human heart illustration">
-            <defs>
-              <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0" stop-color="#FF6B6B"/>
-                <stop offset="1" stop-color="#B92B2B"/>
-              </linearGradient>
-              <radialGradient id="g2" cx="40%" cy="30%" r="80%">
-                <stop offset="0" stop-color="#FFC1C1" stop-opacity="0.4"/>
-                <stop offset="1" stop-color="#6b0000" stop-opacity="0.2"/>
-              </radialGradient>
-            </defs>
-
-            <!-- main heart body 
-            <path d="M32 56c-9-8-18-16-18-26 0-7.5 6-13 13-13 3.5 0 6.5 1.5 8.5 3.5 2-2 5-3.5 8.5-3.5 7 0 13 5.5 13 13 0 10-9 18-18 26-2.5 2-6.5 2-7 2s-4.5 0-7-2z"
-                  fill="url(#g1)" stroke="#7a1d1d" stroke-width="1.2" />
-            <!-- left ventricle shading 
-            <path d="M22 28c2.5-2 6-3.5 10-3.5 1.8 0 3.5.3 5 .9" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>
-
-            <!-- subtle highlight 
-            <ellipse cx="36" cy="34" rx="14" ry="12" fill="url(#g2)" opacity="0.36"/>
-
-            <!-- aorta/arteries 
-            <path d="M27 11c1.2-3 4.4-6 8-6 3.6 0 6.8 3 8 6" fill="none" stroke="#B93A3A" stroke-width="2.6" stroke-linecap="round"/>
-            <path d="M37 9c0-1.5.8-3 2-4" fill="none" stroke="#D45A5A" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
-        </div> -->
 
         <div class="avatar">
           <div class="photo">AV</div>
@@ -314,42 +285,47 @@
           <h3>Contact</h3>
           <div class="contact-list">
             <div><strong>Email</strong><br><a href="mailto:atharvavadane12@gmail.com">atharvavadane12@gmail.com</a></div>
-            <div><strong>Phone</strong><br><span><tel:+91 9405005294>+91 9405005294 </tel:+91 9405005294></span></div>
-            <div><strong>Location</strong><br><span>Maharashtra, India</span></div>
+            <div><strong>Phone</strong><br><span>+91 9405005294</span></div>
+            <div><strong>Location</strong><br><span>Pune, Maharashtra, India</span></div>
           </div>
         </div>
 
         <div class="section">
           <h3>Links</h3>
-          <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px">
-            <a href="https://github.com/atharva-star-dot" target="_blank" rel="noopener noreferrer">Github</a>
-            <a href="https://www.linkedin.com/in/atharva-vadane-976a2b299" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://www.hackerrank.com/profile/atharvavadane12" target="_blank" rel="noopener noreferrer">HackerRank</a>
-             <a href="https://codeforces.com/profile/Atharva-12" target="_blank" rel="noopener noreferrer">GFG</a>
-            <a href="https://codeforces.com/profile/Atharva-12" target="_blank" rel="noopener noreferrer">Codeforces</a>
-                    <a href="https://www.codechef.com/users/bask_coral_22" target="_blank" rel="noopener noreferrer">CodeChef</a>
-            <a href="https://www.cloudskillsboost.google/public_profiles/def8fbba-8068-429e-b53f-4bf34833a926" target="_blank" rel="noopener noreferrer">Cloud Skills</a>
+          <div class="link-list">
+            <a href="https://github.com/atharva-star-dot" target="_blank" rel="noopener noreferrer">⬡ GitHub</a>
+            <a href="https://www.linkedin.com/in/atharva-vadane-976a2b299" target="_blank" rel="noopener noreferrer">in LinkedIn</a>
+            <a href="https://www.hackerrank.com/profile/atharvavadane12" target="_blank" rel="noopener noreferrer">◈ HackerRank</a>
+            <a href="https://auth.geeksforgeeks.org/user/atharvavadane12" target="_blank" rel="noopener noreferrer">⬡ GeeksForGeeks</a>
+            <a href="https://codeforces.com/profile/Atharva-12" target="_blank" rel="noopener noreferrer">⬡ Codeforces</a>
+            <a href="https://www.codechef.com/users/bask_coral_22" target="_blank" rel="noopener noreferrer">⬡ CodeChef</a>
+            <a href="https://huggingface.co/atharvav1id4" target="_blank" rel="noopener noreferrer">🤗 HuggingFace</a>
+            <a href="https://www.cloudskillsboost.google/public_profiles/def8fbba-8068-429e-b53f-4bf34833a926" target="_blank" rel="noopener noreferrer">☁ Google Cloud Skills</a>
           </div>
         </div>
 
         <div class="section">
           <h3>Education</h3>
-          <div class="timeline">
-            <div class="item">
-              <strong>RB Narayanrao Borawake College</strong>
-              <div style="color:var(--muted);font-size:13px">B.Sc. Computer Science (Minor-Statistics) — Expected May 2026</div>
+          <div class="timeline" style="margin-top:0">
+            <div class="item" style="border-left-color:var(--teal)">
+              <strong style="font-size:14px">RB Narayanrao Borawake College</strong>
+              <div class="date">B.Sc. Computer Science (Minor: Statistics)</div>
+              <div style="color:var(--muted);font-size:12px;margin-top:4px">Expected May 2026 · <span style="color:var(--teal);font-weight:600">CGPA 7.5 / 10</span></div>
             </div>
           </div>
         </div>
 
         <div class="section">
           <h3>Certificates</h3>
-          <div style="color:var(--muted);font-size:13px;display:flex;flex-direction:column;gap:6px">
-            <div>Oracle Certified in Cloud & AI (2025)</div>
-            <div>TCS Career Edge — Young Professional</div>
-            <div>NPTEL — Programming in Java (Elite)</div>
-            <div>Google Cloud Digital Leader • Generative AI Foundations</div>
-            <div>AWS Certificate of Generative AI for Executives</div>
+          <div class="cert-list">
+            <div class="cert">Oracle Cloud Infrastructure 2025 — AI Foundation Associate</div>
+            <div class="cert">NPTEL — Programming in Java (Elite, IIT Kharagpur)</div>
+            <div class="cert">Google Cloud Digital Leader Training Program</div>
+            <div class="cert">Google Cloud — Generative AI Foundations</div>
+            <div class="cert">AWS Certificate of Generative AI for Executives</div>
+            <div class="cert">GeeksforGeeks — Full Stack Developer Bootcamp</div>
+            <div class="cert">SkillsUP Final Year Course — IIT Roorkee</div>
+            <div class="cert">TCS Career Edge — Young Professional</div>
           </div>
         </div>
 
@@ -358,141 +334,233 @@
       <!-- RIGHT: main content -->
       <section class="content">
 
-        <div class="card hero" id="about" aria-labelledby="aboutHeading">
+        <!-- HERO -->
+        <div class="card hero fade-in" id="about" aria-labelledby="aboutHeading">
           <div class="intro">
-            <h2 id="aboutHeading">Hi — I'm Atharva. I build data pipelines & responsive web apps.</h2>
+            <h2 id="aboutHeading">Hi — I'm Atharva. I build data pipelines & full-stack products.</h2>
             <p class="lead">
-              Data engineering intern experienced with Azure Data Factory, Databricks and building generic continuous ingestion frameworks.
-              I also design responsive front-end experiences using HTML, CSS, JavaScript and Bootstrap. I enjoy automating pipelines,
-              improving data reliability and shipping user-friendly interfaces.
+              Final-year BSc Computer Science student with hands-on experience building production-grade SaaS products and cloud-based ETL pipelines. Founder of a live Transport Management System used daily by a transport company in Maharashtra. Proficient in Python, Java, JavaScript, REST APIs, and Azure / AWS / GCP cloud services.
             </p>
-
             <div class="cta">
               <a class="btn" href="#projects">View Projects</a>
               <a class="btn secondary" href="mailto:atharvavadane12@gmail.com">Email me</a>
+              <!-- Replace href below with your actual hosted resume PDF URL -->
+              <a class="btn accent" href="Atharva_Vadane_fin_A_Resume.pdf" download="Atharva_Vadane_Resume.pdf">⬇ Resume</a>
             </div>
           </div>
 
-          <!-- small summary boxes -->
-          <div style="min-width:240px;display:flex;flex-direction:column;gap:10px">
-            <div style="background:rgba(255,255,255,0.01);padding:10px;border-radius:12px;text-align:center">
-              <div style="font-size:20px;font-weight:800;color:var(--teal)">May—Jul 2025</div>
-              <div style="color:var(--muted);font-size:13px">Data Engineering Intern — Celebal Technologies</div>
+          <div style="min-width:220px;display:flex;flex-direction:column;gap:10px">
+            <div class="stat-box">
+              <div class="val">May – Jul 2025</div>
+              <div class="lbl">Data Engineering Intern · Celebal Technologies</div>
             </div>
-
-            <div style="background:rgba(255,255,255,0.01);padding:10px;border-radius:12px;text-align:center">
-              <div style="font-size:20px;font-weight:800;color:var(--accent)">July 2024 — July 2025</div>
-              <div style="color:var(--muted);font-size:13px">Developer — Creative Film Platform</div>
+            <div class="stat-box" style="--teal:var(--accent)">
+              <div class="val" style="color:var(--accent)">2024 – Present</div>
+              <div class="lbl">Founder · Transport Management System</div>
             </div>
-          </div>
-        </div>
-
-        <div class="card" id="projects">
-          <h3 style="margin-bottom:12px">Selected Projects</h3>
-
-          <div class="projects">
-            <div class="project">
-              <h4>Generic Continuous Data Ingestion</h4>
-              <p>Automated bi-daily Azure Data Factory pipelines integrated with Databricks and ADLS to ingest global datasets (India, US, UK, China, Russia). Dynamic triggers & conditional flows for SQL record-based processing.</p>
-              <div style="margin-top:8px"><strong>Tech:</strong> Azure ADF, Databricks, ADLS, REST APIs</div>
-            </div>
-
-            <div class="project">
-              <h4>Online Student Attendance Management System</h4>
-              <p>Portal to mark student attendance with a full LAMP/JS stack: HTML, CSS, JavaScript, PHP, MySQL. Implemented role-based access and attendance reporting.</p>
-              <div style="margin-top:8px"><strong>Tech:</strong> PHP, MySQL, JS</div>
-            </div>
-
-            <div class="project">
-              <h4>Responsive Community Website</h4>
-              <p>Designed and deployed a mobile-friendly community website; collaborated with clients for feature planning and iterative feedback.</p>
-              <div style="margin-top:8px"><strong>Tech:</strong> HTML, CSS, JS, Bootstrap</div>
-            </div>
-
-            <div class="project">
-              <h4>Automation & CI/CD — Proof of Concept</h4>
-              <p>Built parameterized ADF pipelines and orchestration to improve automation and reliability of enterprise workflows.</p>
-              <div style="margin-top:8px"><strong>Tech:</strong> Azure, GitHub</div>
+            <div class="stat-box">
+              <div class="val" style="color:#f5a623">5+</div>
+              <div class="lbl">Projects shipped</div>
             </div>
           </div>
         </div>
 
-        <div class="card" id="experience">
+        <!-- PROJECTS -->
+        <div class="card fade-in" id="projects">
+          <h3>Selected Projects</h3>
+
+          <div class="projects-grid">
+
+            <!-- TMS — FLAGSHIP -->
+            <div class="project" style="border:1px solid rgba(23,190,187,0.15);grid-column:1/-1">
+              <div class="project-header">
+                <h4>Transport Management System (TMS) — SaaS Platform</h4>
+                <span class="live-badge">🟢 Live</span>
+              </div>
+              <p>Built and launched an end-to-end SaaS TMS platform from scratch, currently live in Early Access, targeting India's 5M+ small and mid-size fleet operators who rely on paper and WhatsApp for freight management. Features Smart Dispatch, Live Load Tracking, GST Invoice Generation, Carrier Management, and Cloud Backup using a multi-cloud backend. Deployed a billing system and desktop application at Pandurang Transport Pvt. Ltd. — actively used in daily production operations. Designed the full-stack architecture independently covering REST API design, database schema, cloud infrastructure, and frontend UI.</p>
+              <div class="project-tech">Azure · AWS · GCP · Node.js · REST APIs · Full-Stack</div>
+              <div class="project-links">
+                <a class="proj-link" href="https://tms-steel-seven.vercel.app/" target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>
+                <a class="proj-link" href="https://github.com/atharva-star-dot" target="_blank" rel="noopener noreferrer">⬡ GitHub</a>
+              </div>
+            </div>
+
+            <!-- HuggingFace AI Hackathon -->
+            <div class="project" style="border:1px solid rgba(245,166,35,0.15)">
+              <div class="project-header">
+                <h4>AI Hackathon Project</h4>
+                <span class="live-badge hf-badge">🤗 HuggingFace</span>
+              </div>
+              <p>An AI-powered application built and deployed on HuggingFace Spaces as part of a hackathon. Demonstrates applied machine learning skills and rapid prototyping with modern AI tooling.</p>
+              <div class="project-tech">Python · HuggingFace · Gradio · ML</div>
+              <div class="project-links">
+                <a class="proj-link hf" href="https://huggingface.co/spaces/atharvav1id4/hackathon" target="_blank" rel="noopener noreferrer">🤗 View Space</a>
+              </div>
+            </div>
+
+            <!-- Generic Ingestion -->
+            <div class="project">
+              <div class="project-header">
+                <h4>Generic Continuous Data Ingestion</h4>
+              </div>
+              <p>Automated bi-daily Azure Data Factory pipelines integrated with Databricks and ADLS to ingest global datasets across 5 countries. Built reusable, parameterized pipeline templates configurable for new sources with minimal changes. Dynamic triggers & conditional flows for SQL record-based processing.</p>
+              <div class="project-tech">Azure ADF · Databricks · ADLS Gen2 · PySpark · REST APIs</div>
+              <div class="project-links">
+                <a class="proj-link" href="https://github.com/atharva-star-dot" target="_blank" rel="noopener noreferrer">⬡ GitHub</a>
+              </div>
+            </div>
+
+            <!-- Attendance System -->
+            <div class="project">
+              <div class="project-header">
+                <h4>Online Student Attendance Management System</h4>
+              </div>
+              <p>Full-stack web portal for managing student attendance with role-based access control for admin, faculty, and students. Implemented automated attendance reporting using a LAMP stack.</p>
+              <div class="project-tech">PHP · MySQL · HTML · CSS · JavaScript</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="card fade-in" id="experience">
           <h3>Experience</h3>
-          <div class="timeline" style="margin-top:12px">
+          <div class="timeline">
+
             <div class="item">
               <h4>Celebal Technologies Pvt. Ltd — Data Engineering Intern</h4>
-              <div style="color:var(--muted);font-size:13px">May 2025 – July 2025 • India</div>
-              <p style="margin-top:8px;color:var(--muted)">
-                Designed & implemented a generic continuous data ingestion framework in Azure Databricks. Built parameterized & conditional ADF pipelines to automate multi-source ingestion and improve enterprise workflow reliability.
-              </p>
+              <div class="date">May 2025 – July 2025 · India</div>
+              <ul>
+                <li>Designed & implemented a generic, reusable continuous data ingestion framework in Azure Databricks, reducing pipeline setup time for new data sources.</li>
+                <li>Engineered parameterized and conditional ADF pipelines automating multi-source ingestion across 5 countries, running bi-daily without manual intervention.</li>
+                <li>Integrated REST APIs, ADF, Databricks, and ADLS Gen2 into an end-to-end ETL pipeline, improving data reliability for enterprise-grade workflows.</li>
+                <li>Configured dynamic triggers and SQL record-based conditional flows for intelligent, event-driven data processing at scale.</li>
+              </ul>
+            </div>
+
+            <div class="item alt">
+              <h4>Pandurang Transport Pvt. Ltd — Developer (OJT)</h4>
+              <div class="date">December 2025 – Present · Ahilyanagar, Maharashtra</div>
+              <ul>
+                <li>Designed and developed a full billing system for daily fleet operations.</li>
+                <li>Built and deployed a desktop application used in active production by the transport company.</li>
+              </ul>
             </div>
 
             <div class="item">
-              <h4>Creative Film Platform — Developer</h4>
-              <div style="color:var(--muted);font-size:13px">July 2024 – July 2025 • India</div>
-              <p style="margin-top:8px;color:var(--muted)">
-                Designed and deployed a responsive community website; coordinated with stakeholders and implemented mobile-friendly UI.
-              </p>
+              <h4>Creative Film Platform — Web Developer</h4>
+              <div class="date">July 2024 – July 2025 · India</div>
+              <ul>
+                <li>Designed and deployed a fully responsive, mobile-first community website.</li>
+                <li>Collaborated directly with stakeholders to translate cross-departmental requirements into a clean, maintainable frontend codebase.</li>
+              </ul>
             </div>
+
           </div>
         </div>
 
-        <div class="card" id="skills">
+        <!-- SKILLS -->
+        <div class="card fade-in" id="skills">
           <h3>Skills</h3>
 
-          <div style="display:flex;gap:20px;flex-wrap:wrap;margin-top:12px">
+          <div style="display:flex;gap:20px;flex-wrap:wrap;margin-top:4px">
             <div style="flex:2;min-width:240px">
-              <h4 style="margin-bottom:8px">Programming & Data</h4>
-              <div class="skills-grid" aria-hidden="false" style="margin-top:6px">
-                <div class="skill-card">Python • PySpark</div>
-                <div class="skill-card">SQL (Postgres, SQL Server)</div>
-                <div class="skill-card">Java • C/C++</div>
-                <div class="skill-card">RDBMS • DSA</div>
-                <div class="skill-card">JavaScript • PHP</div>
-                <div class="skill-card">Linux • Git</div>
+              <h4 style="margin-bottom:10px;font-size:14px;color:var(--muted)">Programming & Data</h4>
+              <div class="skills-grid">
+                <div class="skill-card">Python · PySpark</div>
+                <div class="skill-card">SQL (Postgres, SQL Server, SQLite)</div>
+                <div class="skill-card">Java · C/C++</div>
+                <div class="skill-card">JavaScript · Node.js · PHP</div>
+                <div class="skill-card">HTML · CSS · Bootstrap</div>
+                <div class="skill-card">RDBMS · DSA · OOP</div>
+                <div class="skill-card">Linux · Git / GitHub</div>
+                <div class="skill-card">REST APIs · ETL Pipelines</div>
+                <div class="skill-card">CI/CD basics · System Design</div>
               </div>
             </div>
 
             <div style="flex:1;min-width:200px">
-              <h4 style="margin-bottom:8px">Cloud & Tools</h4>
+              <h4 style="margin-bottom:10px;font-size:14px;color:var(--muted)">Cloud & Tools</h4>
               <div style="display:flex;flex-direction:column;gap:8px">
-                <div class="skill-card">Azure ADF • Databricks • ADLS</div>
-                <div class="skill-card">AWS • Google Cloud</div>
-                <div class="skill-card">REST APIs • ETL Pipelines</div>
+                <div class="skill-card">Azure ADF · Databricks · ADLS Gen2</div>
+                <div class="skill-card">AWS · Google Cloud</div>
+                <div class="skill-card">Multi-cloud Architecture</div>
+              </div>
+
+              <h4 style="margin:14px 0 10px;font-size:14px;color:var(--muted)">Soft Skills</h4>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div class="skill-card">Business Communication</div>
+                <div class="skill-card">Teamwork · Leadership</div>
+                <div class="skill-card">Problem Solving</div>
               </div>
             </div>
           </div>
-
         </div>
 
-        <div class="card" id="contact">
-          <h3>Contact</h3>
-          <p style="color:var(--muted);margin-top:8px">I'm open to internships and junior data-engineer / full-stack roles. Get in touch for collaborations or hiring.</p>
+        <!-- ACHIEVEMENTS -->
+        <div class="card fade-in" id="achievements">
+          <h3>Achievements</h3>
+          <div class="achievement-list">
+            <div class="achievement">
+              <div class="achievement-icon">🏆</div>
+              <div>
+                <p>4th Rank — Poster Presentation Competition, College Level</p>
+                <span>Topic: National Budget 2025</span>
+              </div>
+            </div>
+            <div class="achievement">
+              <div class="achievement-icon">🎓</div>
+              <div>
+                <p>NPTEL Programming in Java — Elite Certificate, Top Percentile Nationally</p>
+                <span>IIT Kharagpur</span>
+              </div>
+            </div>
+            <div class="achievement">
+              <div class="achievement-icon">☁</div>
+              <div>
+                <p>Google Cloud Arcade Facilitator Program</p>
+                <span>Hands-on Cloud Services · April – June 2022</span>
+              </div>
+            </div>
+            <div class="achievement">
+              <div class="achievement-icon">⚡</div>
+              <div>
+                <p>Participated in TCS HackQuest Season 10</p>
+                <span>National coding hackathon</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
-            <a class="btn" href="mailto:atharvavadane12@gmail.com">Email</a>
-            <a class="btn secondary" href="https://www.linkedin.com/in/atharva-vadane-976a2b299" target="_blank" rel="noopener noreferrer">View Linkedin</a>
+        <!-- CONTACT -->
+        <div class="card fade-in" id="contact">
+          <h3>Contact</h3>
+          <p style="color:var(--muted);margin-top:4px;font-size:14px">I'm open to internships and entry-level SDE / data-engineer / full-stack roles. Get in touch for collaborations or hiring.</p>
+
+          <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+            <a class="btn" href="mailto:atharvavadane12@gmail.com">✉ Email</a>
+            <a class="btn secondary" href="https://www.linkedin.com/in/atharva-vadane-976a2b299" target="_blank" rel="noopener noreferrer">in LinkedIn</a>
+            <a class="btn secondary" href="https://github.com/atharva-star-dot" target="_blank" rel="noopener noreferrer">⬡ GitHub</a>
           </div>
         </div>
 
       </section>
-
     </div>
 
     <footer>
-      <div>Made with a bit of ❤️ and code • © Atharva Vadane</div>
+      <div>Made with ❤️ and code · © Atharva Vadane</div>
       <div style="margin-top:8px;color:var(--muted)">Thanks for viewing</div>
     </footer>
 
   </div>
+
+  <script>
+    // Scroll fade-in
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible') }),
+      { threshold: 0.08 }
+    );
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
