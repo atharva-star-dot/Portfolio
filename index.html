@@ -129,7 +129,7 @@
     .stat-box .val{font-size:15px;font-weight:800;color:var(--teal)}
     .stat-box .lbl{color:var(--muted);font-size:12px;margin-top:4px}
 
-    /* ── NEW: Design Highlights banner ── */
+    /* Design Highlights banner */
     .design-banner{
       border-radius:var(--radius);
       background: linear-gradient(135deg, rgba(23,190,187,0.06) 0%, rgba(15,23,36,0.8) 60%);
@@ -151,11 +151,8 @@
       font-size:11px;color:var(--muted);
       position:relative;overflow:hidden;
     }
-    /* TMS mockup */
     .screen-tms{background:linear-gradient(135deg,#0a1628 0%,#0d1f35 100%)}
-    /* Film platform mockup */
     .screen-film{background:linear-gradient(135deg,#12091e 0%,#1a0d2e 100%)}
-    /* Attendance portal */
     .screen-att{background:linear-gradient(135deg,#081420 0%,#0b1c2e 100%)}
 
     .design-card-body{padding:10px 12px 12px}
@@ -163,7 +160,6 @@
     .design-card-body p{font-size:12px;color:var(--muted);line-height:1.5}
     .design-card-body .tag{font-size:11px;color:var(--teal);font-weight:600;margin-top:6px;display:block}
 
-    /* IBM DT pill */
     .ibm-pill{
       display:inline-flex;align-items:center;gap:6px;
       background:rgba(23,190,187,0.08);border:1px solid rgba(23,190,187,0.18);
@@ -208,12 +204,12 @@
     .proj-link.hf{color:#f5a623;border-color:rgba(245,166,35,0.25);background:rgba(245,166,35,0.05)}
     .proj-link.hf:hover{background:rgba(245,166,35,0.12)}
 
-    /* Tag badge for "Live" */
     .live-badge{
       font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;
       background:rgba(23,190,187,0.12);color:var(--teal);white-space:nowrap;
     }
     .live-badge.hf-badge{background:rgba(245,166,35,0.12);color:#f5a623}
+    .live-badge.award-badge{background:rgba(255,107,107,0.12);color:var(--accent)}
 
     /* Timeline */
     .timeline{display:flex;flex-direction:column;gap:14px}
@@ -252,6 +248,7 @@
     .achievement-icon{font-size:18px;line-height:1}
     .achievement p{font-size:14px;color:#E6EEF3}
     .achievement span{font-size:12px;color:var(--muted)}
+    .achievement .ach-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
 
     /* Certs */
     .cert-list{display:flex;flex-direction:column;gap:6px;margin-top:4px}
@@ -312,9 +309,7 @@
         <div class="logo">AV</div>
         <div>
           <h1>Atharva Vadane</h1>
-          <!-- ── UPDATED HEADLINE ── -->
           <p>UI/UX Designer &nbsp;·&nbsp; Frontend Developer &nbsp;·&nbsp; Data Engineer</p>
-          <!-- ── NEW: DevOps tagline ── -->
           <p style="color:var(--teal);font-weight:600">DevOps &nbsp;·&nbsp; Cloud &nbsp;·&nbsp; CI/CD &nbsp;·&nbsp; Automation</p>
         </div>
       </a>
@@ -322,11 +317,11 @@
         <div class="links" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#design">Design</a>
-          <!-- ── NEW: DevOps nav link ── -->
           <a href="#devops">DevOps</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
+          <a href="#achievements">Achievements</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -341,18 +336,15 @@
           <div class="photo">AV</div>
           <div class="meta">
             <h2>Atharva Vadane</h2>
-            <!-- ── UPDATED SUBTITLE ── -->
             <p>UI/UX Designer &nbsp;·&nbsp; Frontend Developer</p>
           </div>
         </div>
 
-        <!-- ── UPDATED BADGES — design skills first ── -->
         <div class="badges">
           <div class="badge design">UI/UX Design · Wireframing</div>
           <div class="badge design">HTML · CSS · JS · Bootstrap</div>
           <div class="badge">Azure • Databricks • ADF</div>
           <div class="badge">Python • PySpark • SQL</div>
-          <!-- ── NEW: DevOps badges ── -->
           <div class="badge design">DevOps · CI/CD · Git/GitHub</div>
           <div class="badge design">Azure · AWS · GCP · Vercel</div>
         </div>
@@ -419,13 +411,10 @@
         <!-- HERO -->
         <div class="card hero fade-in" id="about" aria-labelledby="aboutHeading">
           <div class="intro">
-            <!-- ── UPDATED HERO HEADING ── -->
             <h2 id="aboutHeading">Hi — I'm Atharva. I design interfaces &amp; build the products behind them.</h2>
-            <!-- ── UPDATED LEAD ── -->
             <p class="lead">
               Final-year BSc Computer Science student with hands-on experience in UI/UX design, frontend development, and production-grade SaaS products. I translate real user problems into clean, accessible interfaces — from wireframe to shipped product. Founder of a live Transport Management System actively used by a transport company in Maharashtra. Proficient in HTML/CSS/JS, REST APIs, and Azure / AWS / GCP.
             </p>
-            <!-- ── NEW: DevOps lead ── -->
             <p class="lead">
               DevOps focus: I automate and ship software. I have built parameterized, trigger-based Azure Data Factory and Databricks pipelines that run twice a day across 5 countries with no manual intervention, deployed most of my applications on Vercel with Git/GitHub, worked hands-on with AWS SageMaker, and run a production TMS used daily by a transport company.
             </p>
@@ -433,17 +422,13 @@
               <a class="btn" href="#design">View Design Work</a>
               <a class="btn secondary" href="#projects">All Projects</a>
               <a class="btn accent" href="Atharva_Vadane_fin_A_Resume.pdf" download="Atharva_Vadane_Resume.pdf">⬇ Resume</a>
-              <!-- ── NEW: DevOps resume ── -->
               <a class="btn secondary" href="Atharva_Vadane_DevOps_Resume.pdf" download="Atharva_Vadane_DevOps_Resume.pdf">⬇ DevOps Resume</a>
             </div>
-            <!-- ── NEW: IBM Design Thinking pill ── -->
             <div class="ibm-pill">✦ Familiar with Design Thinking &amp; user-centred process</div>
-            <!-- ── NEW: DevOps pill ── -->
             <div class="ibm-pill" style="margin-left:8px">⚙ DevOps · Cloud · CI/CD · Automation</div>
           </div>
 
           <div style="min-width:220px;display:flex;flex-direction:column;gap:10px">
-            <!-- ── NEW stat box for UI work ── -->
             <div class="stat-box" style="border-color:rgba(23,190,187,0.12)">
               <div class="val">3+</div>
               <div class="lbl">UI Products Designed &amp; Shipped</div>
@@ -457,15 +442,13 @@
               <div class="lbl">Founder · Transport Management System</div>
             </div>
             <div class="stat-box">
-              <div class="val" style="color:#f5a623">5+</div>
+              <div class="val" style="color:#f5a623">8+</div>
               <div class="lbl">Projects shipped</div>
             </div>
           </div>
         </div>
 
-        <!-- ══════════════════════════════════════════════
-             NEW SECTION: UI/UX Design Work
-        ══════════════════════════════════════════════ -->
+        <!-- UI/UX Design Work -->
         <div class="design-banner fade-in" id="design">
           <h3>UI / UX Design Work</h3>
           <p class="sub">End-to-end interfaces I designed and built — from stakeholder brief to production</p>
@@ -476,14 +459,12 @@
             <div class="design-card">
               <div class="design-screen screen-tms">
                 <svg width="100%" height="100%" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
-                  <!-- sidebar -->
                   <rect x="0" y="0" width="60" height="180" fill="rgba(10,20,38,0.9)"/>
                   <rect x="8" y="14" width="44" height="6" rx="3" fill="rgba(23,190,187,0.5)"/>
                   <rect x="8" y="32" width="44" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
                   <rect x="8" y="44" width="44" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
                   <rect x="8" y="56" width="44" height="5" rx="2" fill="rgba(255,255,255,0.08)"/>
                   <rect x="8" y="68" width="44" height="5" rx="2" fill="rgba(23,190,187,0.25)"/>
-                  <!-- main area -->
                   <rect x="68" y="10" width="70" height="32" rx="5" fill="rgba(23,190,187,0.08)" stroke="rgba(23,190,187,0.15)" stroke-width="1"/>
                   <rect x="72" y="16" width="30" height="4" rx="2" fill="rgba(23,190,187,0.6)"/>
                   <rect x="72" y="24" width="20" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
@@ -493,13 +474,11 @@
                   <rect x="224" y="10" width="88" height="32" rx="5" fill="rgba(245,166,35,0.06)" stroke="rgba(245,166,35,0.12)" stroke-width="1"/>
                   <rect x="228" y="16" width="30" height="4" rx="2" fill="rgba(245,166,35,0.6)"/>
                   <rect x="228" y="24" width="20" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
-                  <!-- table -->
                   <rect x="68" y="52" width="244" height="6" rx="2" fill="rgba(255,255,255,0.04)"/>
                   <rect x="68" y="62" width="244" height="14" rx="3" fill="rgba(23,190,187,0.04)"/>
                   <rect x="68" y="80" width="244" height="14" rx="3" fill="rgba(255,255,255,0.02)"/>
                   <rect x="68" y="98" width="244" height="14" rx="3" fill="rgba(23,190,187,0.04)"/>
                   <rect x="68" y="116" width="244" height="14" rx="3" fill="rgba(255,255,255,0.02)"/>
-                  <!-- live dot -->
                   <circle cx="292" cy="59" r="3" fill="#17BEBB" opacity="0.8"/>
                   <rect x="72" y="65" width="40" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
                   <rect x="72" y="83" width="55" height="4" rx="2" fill="rgba(255,255,255,0.12)"/>
@@ -509,7 +488,6 @@
                   <rect x="200" y="83" width="30" height="4" rx="2" fill="rgba(255,107,107,0.5)"/>
                   <rect x="200" y="101" width="30" height="4" rx="2" fill="rgba(23,190,187,0.5)"/>
                   <rect x="200" y="119" width="30" height="4" rx="2" fill="rgba(245,166,35,0.5)"/>
-                  <!-- label -->
                   <rect x="68" y="142" width="80" height="5" rx="2" fill="rgba(255,255,255,0.06)"/>
                   <rect x="68" y="153" width="120" height="4" rx="2" fill="rgba(255,255,255,0.04)"/>
                 </svg>
@@ -525,19 +503,16 @@
             <div class="design-card">
               <div class="design-screen screen-film">
                 <svg width="100%" height="100%" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
-                  <!-- nav -->
                   <rect x="0" y="0" width="320" height="28" fill="rgba(18,9,30,0.95)"/>
                   <rect x="12" y="10" width="50" height="8" rx="3" fill="rgba(180,100,255,0.5)"/>
                   <rect x="200" y="11" width="25" height="6" rx="2" fill="rgba(255,255,255,0.1)"/>
                   <rect x="232" y="11" width="25" height="6" rx="2" fill="rgba(255,255,255,0.1)"/>
                   <rect x="264" y="9" width="44" height="10" rx="4" fill="rgba(180,100,255,0.3)"/>
-                  <!-- hero banner -->
                   <rect x="0" y="28" width="320" height="72" fill="rgba(26,13,46,0.8)"/>
                   <rect x="16" y="44" width="120" height="10" rx="3" fill="rgba(255,255,255,0.6)"/>
                   <rect x="16" y="60" width="180" height="5" rx="2" fill="rgba(255,255,255,0.2)"/>
                   <rect x="16" y="70" width="140" height="5" rx="2" fill="rgba(255,255,255,0.12)"/>
                   <rect x="16" y="84" width="70" height="12" rx="5" fill="rgba(180,100,255,0.45)"/>
-                  <!-- cards row -->
                   <rect x="8" y="110" width="90" height="60" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
                   <rect x="106" y="110" width="90" height="60" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
                   <rect x="204" y="110" width="108" height="60" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
@@ -560,23 +535,19 @@
             <div class="design-card">
               <div class="design-screen screen-att">
                 <svg width="100%" height="100%" viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
-                  <!-- topbar -->
                   <rect x="0" y="0" width="320" height="32" fill="rgba(8,20,32,0.95)"/>
                   <rect x="12" y="11" width="60" height="10" rx="3" fill="rgba(23,190,187,0.4)"/>
                   <rect x="240" y="12" width="24" height="8" rx="3" fill="rgba(255,255,255,0.08)"/>
                   <rect x="270" y="12" width="38" height="8" rx="3" fill="rgba(23,190,187,0.2)"/>
-                  <!-- tabs -->
                   <rect x="0" y="32" width="320" height="24" fill="rgba(11,28,46,0.7)"/>
                   <rect x="8" y="38" width="55" height="12" rx="3" fill="rgba(23,190,187,0.15)" stroke="rgba(23,190,187,0.3)" stroke-width="1"/>
                   <rect x="70" y="40" width="44" height="8" rx="3" fill="rgba(255,255,255,0.06)"/>
                   <rect x="122" y="40" width="44" height="8" rx="3" fill="rgba(255,255,255,0.06)"/>
-                  <!-- table header -->
                   <rect x="8" y="64" width="304" height="14" rx="3" fill="rgba(23,190,187,0.08)"/>
                   <rect x="12" y="68" width="40" height="5" rx="2" fill="rgba(23,190,187,0.4)"/>
                   <rect x="80" y="68" width="60" height="5" rx="2" fill="rgba(23,190,187,0.4)"/>
                   <rect x="200" y="68" width="40" height="5" rx="2" fill="rgba(23,190,187,0.4)"/>
                   <rect x="270" y="68" width="36" height="5" rx="2" fill="rgba(23,190,187,0.4)"/>
-                  <!-- rows -->
                   <rect x="8" y="82" width="304" height="12" rx="2" fill="rgba(255,255,255,0.02)"/>
                   <rect x="12" y="86" width="30" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
                   <rect x="80" y="86" width="55" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
@@ -590,7 +561,6 @@
                   <rect x="80" y="118" width="55" height="4" rx="2" fill="rgba(255,255,255,0.15)"/>
                   <rect x="202" y="117" width="24" height="6" rx="3" fill="rgba(23,190,187,0.3)"/>
                   <rect x="8" y="130" width="304" height="12" rx="2" fill="rgba(255,255,255,0.01)"/>
-                  <!-- export btn -->
                   <rect x="220" y="152" width="90" height="16" rx="5" fill="rgba(23,190,187,0.15)" stroke="rgba(23,190,187,0.2)" stroke-width="1"/>
                   <rect x="232" y="158" width="66" height="4" rx="2" fill="rgba(23,190,187,0.5)"/>
                 </svg>
@@ -604,7 +574,6 @@
 
           </div>
 
-          <!-- Design Process row -->
           <div class="process-row">
             <div class="process-step">
               <div class="p-icon">🔍</div>
@@ -634,12 +603,8 @@
           </div>
 
         </div>
-        <!-- ══ END NEW SECTION ══ -->
 
-
-        <!-- ══════════════════════════════════════════════
-             NEW SECTION: DevOps & Cloud
-        ══════════════════════════════════════════════ -->
+        <!-- DevOps & Cloud -->
         <div class="design-banner fade-in" id="devops">
           <h3>DevOps &amp; Cloud</h3>
           <p class="sub">Automation, deployments and cloud operations across Azure, AWS and Google Cloud</p>
@@ -649,7 +614,7 @@
             <div class="design-card">
               <div class="design-card-body">
                 <h5>CI/CD &amp; Deployments</h5>
-                <p>Version-controlled projects on Git and GitHub, with most applications deployed on Vercel (TMS, attendance portal, portfolio). AI hackathon app deployed on HuggingFace Spaces. Comfortable with CI/CD fundamentals and deployment best practices.</p>
+                <p>Version-controlled projects on Git and GitHub, with most applications deployed on Vercel (TMS, attendance portal, portfolio, LifeBridge, Skill Bridge AI, Prompt Wars app). AI hackathon app deployed on HuggingFace Spaces. Comfortable with CI/CD fundamentals and deployment best practices.</p>
                 <span class="tag">Git · GitHub · Vercel · HuggingFace Spaces · CI/CD basics</span>
               </div>
             </div>
@@ -700,10 +665,8 @@
             </div>
           </div>
         </div>
-        <!-- ══ END DevOps SECTION ══ -->
 
-
-        <!-- PROJECTS (unchanged) -->
+        <!-- PROJECTS -->
         <div class="card fade-in" id="projects">
           <h3>Selected Projects</h3>
 
@@ -720,6 +683,48 @@
               <div class="project-links">
                 <a class="proj-link" href="https://tms-steel-seven.vercel.app/" target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>
                 <a class="proj-link" href="https://github.com/atharva-star-dot" target="_blank" rel="noopener noreferrer">⬡ GitHub</a>
+              </div>
+            </div>
+
+            <!-- NEW: Prompt Wars Hackathon -->
+            <div class="project" style="border:1px solid rgba(255,107,107,0.18)">
+              <div class="project-header">
+                <h4>Prompt Wars Hackathon Project</h4>
+                <span class="live-badge award-badge">🥇 Top 5</span>
+              </div>
+              <p>Built for the Prompt Wars hackathon at DY Patil College (Brain, DYPCCOEI), where it placed in the Top 5. Built and deployed live under hackathon time constraints.</p>
+              <div class="project-tech">Hackathon · Prompt Engineering · Vercel</div>
+              <div class="project-links">
+                <a class="proj-link" href="https://prompt-wars-hackathon-sable.vercel.app/" target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>
+                <a class="proj-link" href="https://github.com/atharva-star-dot/promptWarsHackathon" target="_blank" rel="noopener noreferrer">⬡ GitHub</a>
+              </div>
+            </div>
+
+            <!-- NEW: Skill Bridge AI -->
+            <div class="project">
+              <div class="project-header">
+                <h4>Skill Bridge AI</h4>
+                <span class="live-badge">🟢 Live</span>
+              </div>
+              <p>AI-powered career-readiness platform that helps students bridge the gap between their current skills and job requirements — skill-gap detection, personalised learning plans, resume checking, AI mock interviews, and job matching.</p>
+              <div class="project-tech">AI · Full-Stack · Vercel</div>
+              <div class="project-links">
+                <a class="proj-link" href="https://skill-bridge-ai-cww-ai-magicbus.vercel.app/" target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>
+                <a class="proj-link" href="https://github.com/atharva-star-dot/skill-bridge-ai-cww-ai-magicbus" target="_blank" rel="noopener noreferrer">⬡ GitHub</a>
+              </div>
+            </div>
+
+            <!-- NEW: LifeBridge -->
+            <div class="project">
+              <div class="project-header">
+                <h4>LifeBridge</h4>
+                <span class="live-badge">🟢 Live</span>
+              </div>
+              <p>A web application built and deployed end-to-end, focused on connecting people with the help and resources they need through a clean, accessible interface.</p>
+              <div class="project-tech">Web App · Frontend · Vercel</div>
+              <div class="project-links">
+                <a class="proj-link" href="http://lifebridge-khaki.vercel.app/" target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>
+                <a class="proj-link" href="https://github.com/atharva-star-dot/lifebridge" target="_blank" rel="noopener noreferrer">⬡ GitHub</a>
               </div>
             </div>
 
@@ -741,7 +746,7 @@
               <div class="project-header">
                 <h4>Generic Continuous Data Ingestion</h4>
               </div>
-              <p>Automated bi-daily Azure Data Factory pipelines integrated with Databricks and ADLS to ingest global datasets across 5 countries. Built reusable, parameterized pipeline templates configurable for new sources with minimal changes. Dynamic triggers & conditional flows for SQL record-based processing.</p>
+              <p>Automated bi-daily Azure Data Factory pipelines integrated with Databricks and ADLS to ingest global datasets across 5 countries. Built reusable, parameterized pipeline templates configurable for new sources with minimal changes. Dynamic triggers &amp; conditional flows for SQL record-based processing.</p>
               <div class="project-tech">Azure ADF · Databricks · ADLS Gen2 · PySpark · REST APIs</div>
               <div class="project-links">
                 <a class="proj-link" href="https://github.com/atharva-star-dot" target="_blank" rel="noopener noreferrer">⬡ GitHub</a>
@@ -752,18 +757,19 @@
             <div class="project">
               <div class="project-header">
                 <h4>Online Student Attendance Management System</h4>
-                  <span class="live-badge">🟢 Live</span>
+                <span class="live-badge">🟢 Live</span>
               </div>
               <p>Full-stack web portal for managing student attendance with role-based access control for admin, faculty, and students. Implemented automated attendance reporting using a LAMP stack.</p>
               <div class="project-tech">PHP · MySQL · HTML · CSS · JavaScript</div>
-                   <!-- fixed: added missing closing quote after the URL -->
-                   <a class="proj-link" href="https://port-web-eosin.vercel.app/" target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>
+              <div class="project-links">
+                <a class="proj-link" href="https://port-web-eosin.vercel.app/" target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>
+              </div>
             </div>
 
           </div>
         </div>
 
-        <!-- EXPERIENCE (unchanged) -->
+        <!-- EXPERIENCE -->
         <div class="card fade-in" id="experience">
           <h3>Experience</h3>
           <div class="timeline">
@@ -772,7 +778,7 @@
               <h4>Celebal Technologies Pvt. Ltd — Data Engineering Intern</h4>
               <div class="date">May 2025 – July 2025 · India</div>
               <ul>
-                <li>Designed & implemented a generic, reusable continuous data ingestion framework in Azure Databricks, reducing pipeline setup time for new data sources.</li>
+                <li>Designed &amp; implemented a generic, reusable continuous data ingestion framework in Azure Databricks, reducing pipeline setup time for new data sources.</li>
                 <li>Engineered parameterized and conditional ADF pipelines automating multi-source ingestion across 5 countries, running bi-daily without manual intervention.</li>
                 <li>Integrated REST APIs, ADF, Databricks, and ADLS Gen2 into an end-to-end ETL pipeline, improving data reliability for enterprise-grade workflows.</li>
                 <li>Configured dynamic triggers and SQL record-based conditional flows for intelligent, event-driven data processing at scale.</li>
@@ -800,14 +806,13 @@
           </div>
         </div>
 
-        <!-- SKILLS — updated with UX skills added at top -->
+        <!-- SKILLS -->
         <div class="card fade-in" id="skills">
           <h3>Skills</h3>
 
           <div style="display:flex;gap:20px;flex-wrap:wrap;margin-top:4px">
             <div style="flex:2;min-width:240px">
 
-              <!-- ── NEW: UI/UX skills subsection ── -->
               <h4 style="margin-bottom:10px;font-size:14px;color:var(--teal)">UI / UX Design</h4>
               <div class="skills-grid" style="margin-bottom:16px">
                 <div class="skill-card ux">User-Centred Design</div>
@@ -818,7 +823,6 @@
                 <div class="skill-card ux">Accessibility Principles</div>
               </div>
 
-              <!-- ── NEW: DevOps & Cloud skills subsection ── -->
               <h4 style="margin-bottom:10px;font-size:14px;color:var(--teal)">DevOps &amp; Cloud</h4>
               <div class="skills-grid" style="margin-bottom:16px">
                 <div class="skill-card ux">Git · GitHub</div>
@@ -829,7 +833,7 @@
                 <div class="skill-card ux">Linux · Cloud Computing</div>
               </div>
 
-              <h4 style="margin-bottom:10px;font-size:14px;color:var(--muted)">Programming & Data</h4>
+              <h4 style="margin-bottom:10px;font-size:14px;color:var(--muted)">Programming &amp; Data</h4>
               <div class="skills-grid">
                 <div class="skill-card">Python · PySpark</div>
                 <div class="skill-card">SQL (Postgres, SQL Server, SQLite)</div>
@@ -844,11 +848,10 @@
             </div>
 
             <div style="flex:1;min-width:200px">
-              <h4 style="margin-bottom:10px;font-size:14px;color:var(--muted)">Cloud & Tools</h4>
+              <h4 style="margin-bottom:10px;font-size:14px;color:var(--muted)">Cloud &amp; Tools</h4>
               <div style="display:flex;flex-direction:column;gap:8px">
                 <div class="skill-card">Azure ADF · Databricks · ADLS Gen2</div>
                 <div class="skill-card">AWS · Google Cloud</div>
-                <!-- ── NEW ── -->
                 <div class="skill-card">AWS SageMaker</div>
                 <div class="skill-card">Vercel · HuggingFace Spaces</div>
                 <div class="skill-card">Multi-cloud Architecture</div>
@@ -864,16 +867,20 @@
           </div>
         </div>
 
-        <!-- ACHIEVEMENTS (unchanged) -->
+        <!-- ACHIEVEMENTS -->
         <div class="card fade-in" id="achievements">
           <h3>Achievements</h3>
           <div class="achievement-list">
-            <!-- ── NEW: Prompt Wars ── -->
+            <!-- UPDATED: Prompt Wars with project links -->
             <div class="achievement">
               <div class="achievement-icon">🥇</div>
               <div>
                 <p>Top 5 — Prompt Wars Hackathon</p>
-                <span>Brain, DYPCCOEI</span>
+                <span>Brain, DYPCCOEI · DY Patil College</span>
+                <div class="ach-links">
+                  <a class="proj-link" href="https://prompt-wars-hackathon-sable.vercel.app/" target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>
+                  <a class="proj-link" href="https://github.com/atharva-star-dot/promptWarsHackathon" target="_blank" rel="noopener noreferrer">⬡ GitHub</a>
+                </div>
               </div>
             </div>
             <div class="achievement">
@@ -907,11 +914,10 @@
           </div>
         </div>
 
-        <!-- CONTACT (unchanged) -->
+        <!-- CONTACT -->
         <div class="card fade-in" id="contact">
           <h3>Contact</h3>
           <p style="color:var(--muted);margin-top:4px;font-size:14px">I'm open to internships and entry-level UI/UX Designer, SDE / data-engineer / full-stack roles. Get in touch for collaborations or hiring.</p>
-          <!-- ── NEW ── -->
           <p style="color:var(--muted);margin-top:8px;font-size:14px">Also open to entry-level DevOps / Cloud engineer roles and internships.</p>
 
           <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
