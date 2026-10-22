@@ -314,12 +314,16 @@
           <h1>Atharva Vadane</h1>
           <!-- ── UPDATED HEADLINE ── -->
           <p>UI/UX Designer &nbsp;·&nbsp; Frontend Developer &nbsp;·&nbsp; Data Engineer</p>
+          <!-- ── NEW: DevOps tagline ── -->
+          <p style="color:var(--teal);font-weight:600">DevOps &nbsp;·&nbsp; Cloud &nbsp;·&nbsp; CI/CD &nbsp;·&nbsp; Automation</p>
         </div>
       </a>
       <nav>
         <div class="links" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#design">Design</a>
+          <!-- ── NEW: DevOps nav link ── -->
+          <a href="#devops">DevOps</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
@@ -348,6 +352,9 @@
           <div class="badge design">HTML · CSS · JS · Bootstrap</div>
           <div class="badge">Azure • Databricks • ADF</div>
           <div class="badge">Python • PySpark • SQL</div>
+          <!-- ── NEW: DevOps badges ── -->
+          <div class="badge design">DevOps · CI/CD · Git/GitHub</div>
+          <div class="badge design">Azure · AWS · GCP · Vercel</div>
         </div>
 
         <div class="section">
@@ -418,13 +425,21 @@
             <p class="lead">
               Final-year BSc Computer Science student with hands-on experience in UI/UX design, frontend development, and production-grade SaaS products. I translate real user problems into clean, accessible interfaces — from wireframe to shipped product. Founder of a live Transport Management System actively used by a transport company in Maharashtra. Proficient in HTML/CSS/JS, REST APIs, and Azure / AWS / GCP.
             </p>
+            <!-- ── NEW: DevOps lead ── -->
+            <p class="lead">
+              DevOps focus: I automate and ship software. I have built parameterized, trigger-based Azure Data Factory and Databricks pipelines that run twice a day across 5 countries with no manual intervention, deployed most of my applications on Vercel with Git/GitHub, worked hands-on with AWS SageMaker, and run a production TMS used daily by a transport company.
+            </p>
             <div class="cta">
               <a class="btn" href="#design">View Design Work</a>
               <a class="btn secondary" href="#projects">All Projects</a>
               <a class="btn accent" href="Atharva_Vadane_fin_A_Resume.pdf" download="Atharva_Vadane_Resume.pdf">⬇ Resume</a>
+              <!-- ── NEW: DevOps resume ── -->
+              <a class="btn secondary" href="Atharva_Vadane_DevOps_Resume.pdf" download="Atharva_Vadane_DevOps_Resume.pdf">⬇ DevOps Resume</a>
             </div>
             <!-- ── NEW: IBM Design Thinking pill ── -->
             <div class="ibm-pill">✦ Familiar with Design Thinking &amp; user-centred process</div>
+            <!-- ── NEW: DevOps pill ── -->
+            <div class="ibm-pill" style="margin-left:8px">⚙ DevOps · Cloud · CI/CD · Automation</div>
           </div>
 
           <div style="min-width:220px;display:flex;flex-direction:column;gap:10px">
@@ -622,6 +637,72 @@
         <!-- ══ END NEW SECTION ══ -->
 
 
+        <!-- ══════════════════════════════════════════════
+             NEW SECTION: DevOps & Cloud
+        ══════════════════════════════════════════════ -->
+        <div class="design-banner fade-in" id="devops">
+          <h3>DevOps &amp; Cloud</h3>
+          <p class="sub">Automation, deployments and cloud operations across Azure, AWS and Google Cloud</p>
+
+          <div class="design-grid">
+
+            <div class="design-card">
+              <div class="design-card-body">
+                <h5>CI/CD &amp; Deployments</h5>
+                <p>Version-controlled projects on Git and GitHub, with most applications deployed on Vercel (TMS, attendance portal, portfolio). AI hackathon app deployed on HuggingFace Spaces. Comfortable with CI/CD fundamentals and deployment best practices.</p>
+                <span class="tag">Git · GitHub · Vercel · HuggingFace Spaces · CI/CD basics</span>
+              </div>
+            </div>
+
+            <div class="design-card">
+              <div class="design-card-body">
+                <h5>Pipeline Automation &amp; Orchestration</h5>
+                <p>Built a reusable Azure Databricks ingestion framework and parameterized, conditional ADF pipelines that pull data from 5 countries twice a day without manual intervention, using dynamic triggers and SQL record-based flows.</p>
+                <span class="tag">Azure ADF · Databricks · ADLS Gen2 · PySpark · REST APIs</span>
+              </div>
+            </div>
+
+            <div class="design-card">
+              <div class="design-card-body">
+                <h5>Cloud &amp; Production Operations</h5>
+                <p>Multi-cloud backend (Azure, AWS, GCP) for the TMS with cloud backup, running in daily production at Pandurang Transport Pvt. Ltd. Hands-on with AWS SageMaker. Completed Google Cloud Digital Leader training and the Google Cloud Arcade program.</p>
+                <span class="tag">Azure · AWS · SageMaker · Google Cloud · Linux · Python scripting</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="process-row">
+            <div class="process-step">
+              <div class="p-icon">💻</div>
+              <div class="p-label">Code</div>
+              <div class="p-sub">Python, JS, SQL</div>
+            </div>
+            <div class="process-step">
+              <div class="p-icon">🔀</div>
+              <div class="p-label">Version</div>
+              <div class="p-sub">Git &amp; GitHub</div>
+            </div>
+            <div class="process-step">
+              <div class="p-icon">🚀</div>
+              <div class="p-label">Deploy</div>
+              <div class="p-sub">Vercel &amp; cloud platforms</div>
+            </div>
+            <div class="process-step">
+              <div class="p-icon">⚙️</div>
+              <div class="p-label">Operate</div>
+              <div class="p-sub">Live production use</div>
+            </div>
+            <div class="process-step">
+              <div class="p-icon">🔄</div>
+              <div class="p-label">Improve</div>
+              <div class="p-sub">Troubleshoot &amp; iterate</div>
+            </div>
+          </div>
+        </div>
+        <!-- ══ END DevOps SECTION ══ -->
+
+
         <!-- PROJECTS (unchanged) -->
         <div class="card fade-in" id="projects">
           <h3>Selected Projects</h3>
@@ -675,7 +756,8 @@
               </div>
               <p>Full-stack web portal for managing student attendance with role-based access control for admin, faculty, and students. Implemented automated attendance reporting using a LAMP stack.</p>
               <div class="project-tech">PHP · MySQL · HTML · CSS · JavaScript</div>
-                   <a class="proj-link" href="https://port-web-eosin.vercel.app/ target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>
+                   <!-- fixed: added missing closing quote after the URL -->
+                   <a class="proj-link" href="https://port-web-eosin.vercel.app/" target="_blank" rel="noopener noreferrer">🌐 Live Demo</a>
             </div>
 
           </div>
@@ -736,6 +818,17 @@
                 <div class="skill-card ux">Accessibility Principles</div>
               </div>
 
+              <!-- ── NEW: DevOps & Cloud skills subsection ── -->
+              <h4 style="margin-bottom:10px;font-size:14px;color:var(--teal)">DevOps &amp; Cloud</h4>
+              <div class="skills-grid" style="margin-bottom:16px">
+                <div class="skill-card ux">Git · GitHub</div>
+                <div class="skill-card ux">CI/CD Pipelines</div>
+                <div class="skill-card ux">Vercel Deployments</div>
+                <div class="skill-card ux">Pipeline Automation</div>
+                <div class="skill-card ux">Python Scripting</div>
+                <div class="skill-card ux">Linux · Cloud Computing</div>
+              </div>
+
               <h4 style="margin-bottom:10px;font-size:14px;color:var(--muted)">Programming & Data</h4>
               <div class="skills-grid">
                 <div class="skill-card">Python · PySpark</div>
@@ -755,6 +848,9 @@
               <div style="display:flex;flex-direction:column;gap:8px">
                 <div class="skill-card">Azure ADF · Databricks · ADLS Gen2</div>
                 <div class="skill-card">AWS · Google Cloud</div>
+                <!-- ── NEW ── -->
+                <div class="skill-card">AWS SageMaker</div>
+                <div class="skill-card">Vercel · HuggingFace Spaces</div>
                 <div class="skill-card">Multi-cloud Architecture</div>
               </div>
 
@@ -772,6 +868,14 @@
         <div class="card fade-in" id="achievements">
           <h3>Achievements</h3>
           <div class="achievement-list">
+            <!-- ── NEW: Prompt Wars ── -->
+            <div class="achievement">
+              <div class="achievement-icon">🥇</div>
+              <div>
+                <p>Top 5 — Prompt Wars Hackathon</p>
+                <span>Brain, DYPCCOEI</span>
+              </div>
+            </div>
             <div class="achievement">
               <div class="achievement-icon">🏆</div>
               <div>
@@ -807,6 +911,8 @@
         <div class="card fade-in" id="contact">
           <h3>Contact</h3>
           <p style="color:var(--muted);margin-top:4px;font-size:14px">I'm open to internships and entry-level UI/UX Designer, SDE / data-engineer / full-stack roles. Get in touch for collaborations or hiring.</p>
+          <!-- ── NEW ── -->
+          <p style="color:var(--muted);margin-top:8px;font-size:14px">Also open to entry-level DevOps / Cloud engineer roles and internships.</p>
 
           <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
             <a class="btn" href="mailto:atharvavadane12@gmail.com">✉ Email</a>
